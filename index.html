@@ -159,6 +159,22 @@
     .cert-text strong { color: var(--text); font-weight: 500; }
     .award-pill { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); background: rgba(232,255,107,0.07); border: 1px solid rgba(232,255,107,0.18); padding: 0.35rem 0.85rem; border-radius: 2px; display: inline-block; }
 
+    /* CLIFTONSTRENGTHS */
+    .strengths-wrap { margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 3rem; }
+    .strengths-label-row { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; }
+    .strengths-sub { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); }
+    .strengths-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .strength-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem 1.25rem; transition: border-color 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+    .strength-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; transition: opacity 0.3s; }
+    .strength-card:hover { border-color: var(--border2); transform: translateY(-3px); }
+    .strength-num { font-family: var(--font-mono); font-size: 0.65rem; color: var(--dim); margin-bottom: 0.6rem; }
+    .strength-name { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--text); margin-bottom: 0.5rem; }
+    .strength-domain { font-family: var(--font-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em; padding: 0.2rem 0.55rem; border-radius: 2px; display: inline-block; margin-bottom: 0.85rem; }
+    .strength-domain.strategic { color: #7dd3fc; background: rgba(125,211,252,0.1); }
+    .strength-domain.executing { color: #86efac; background: rgba(134,239,172,0.1); }
+    .strength-domain.relationship { color: #f9a8d4; background: rgba(249,168,212,0.1); }
+    .strength-desc { font-size: 0.83rem; color: #c8c5d4; line-height: 1.7; font-weight: 400; }
+
     /* CONTACT */
     #contact { background: var(--bg); }
     .contact-wrapper { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center; }
@@ -221,7 +237,7 @@
     </div>
     <div class="hero-stats">
       <div><div class="stat-num">8+</div><div class="stat-label">Years experience</div></div>
-      <div><div class="stat-num">$10M+</div><div class="stat-label">Funding secured</div></div>
+      <div><div class="stat-num">$5M+</div><div class="stat-label">Funding secured</div></div>
       <div><div class="stat-num">15+</div><div class="stat-label">Team members led</div></div>
       <div><div class="stat-num">5</div><div class="stat-label">Publications</div></div>
     </div>
@@ -237,7 +253,7 @@
       <div class="about-text">
         <p>I'm a <strong>Visionary Technology and Product Leader</strong> with 8+ years of experience engineering cloud-native ecosystems and directing cross-functional teams of 15+. I specialize in managing Product, Design, DevOps, and QA to transform complex requirements into scalable architectures.</p>
         <p>I hold a <strong>PhD in Software Engineering from Concordia University</strong>, where my research focused on metamodeling for IoT and building management systems — enabling interoperability across mechanical, electrical, and plumbing (MEP) systems in smart buildings. I also hold a master's degree in <strong>Information Technology</strong> from <strong>Carnegie Mellon University</strong>, where my concentration was in Software Engineering and Applied Machine Learning.</p>
-        <p>As CTO at <strong>Complete Farmer</strong>, I led the design and deployment of buyer and grower platforms on AWS, secured $5M+ in Series A funding, and built high-velocity engineering cultures across West Africa. I hold a <strong>PMP&reg;</strong> certification and a <strong>First Class Honours BSc</strong> from KNUST.</p>
+        <p>As CTO at <strong>Complete Farmer</strong>, I led the design and deployment of buyer and grower platforms on AWS, secured $10M+ in Series A funding, and built high-velocity engineering cultures across West Africa. I hold a <strong>PMP&reg;</strong> certification and a <strong>First Class Honours BSc</strong> from KNUST.</p>
         <div class="about-thesis">
           <div class="thesis-label">PhD Thesis</div>
           <p>A metamodel for mechanical, electrical, and plumbing systems: enabling interoperability and control integration in building management.</p>
@@ -283,6 +299,46 @@
         </div>
       </div>
     </div>
+
+    <!-- CLIFTONSTRENGTHS -->
+    <div class="strengths-wrap">
+      <div class="strengths-label-row">
+        <span class="section-label" style="margin-bottom:0">// CliftonStrengths Top 5</span>
+        <span class="strengths-sub">Gallup&reg; Assessment &middot; 2026</span>
+      </div>
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <div class="strength-num">01</div>
+          <div class="strength-name">Analytical</div>
+          <div class="strength-domain strategic">Strategic Thinking</div>
+          <p class="strength-desc">Searches for reasons and causes. Brings objective, fact-based thinking to complex problems — cutting through noise to find what actually matters.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-num">02</div>
+          <div class="strength-name">Learner</div>
+          <div class="strength-domain strategic">Strategic Thinking</div>
+          <p class="strength-desc">Driven by a constant desire to improve. The process of mastering new domains — from IoT metamodeling to cloud infrastructure — is what energises the work.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-num">03</div>
+          <div class="strength-name">Belief</div>
+          <div class="strength-domain executing">Executing</div>
+          <p class="strength-desc">Guided by enduring values and a strong sense of purpose. Success is measured by meaningful impact, not just metrics — in technology, teams, and community.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-num">04</div>
+          <div class="strength-name">Achiever</div>
+          <div class="strength-domain executing">Executing</div>
+          <p class="strength-desc">Hardwired for productivity and tangible results. Every day is a new opportunity to make measurable progress — from sprint velocity to funding milestones.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-num">05</div>
+          <div class="strength-name">Relator</div>
+          <div class="strength-domain relationship">Relationship Building</div>
+          <p class="strength-desc">Finds deep satisfaction in building close, authentic relationships. The best outcomes come from working hard alongside people you genuinely trust.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -302,7 +358,7 @@
           <ul>
             <li>Led end-to-end design, implementation, and deployment of Buyer and Grower products serving the full agricultural value chain</li>
             <li>Secured $10M+ in Series A funding by leading technical due diligence and product demonstrations</li>
-            <li>Spearheaded Agile adoption, achieving a 30% measurable improvement in average sprint velocity</li>
+            <li>Spearheaded Agile adoption achieving a 30% measurable improvement in average sprint velocity</li>
             <li>Boosted project completion by 15% by restructuring cross-functional teams and eliminating operational silos</li>
           </ul>
           <div class="tl-stack">
@@ -373,7 +429,7 @@
         <div class="tl-role">Software Developer</div>
         <div class="tl-company">Accolm Limited &mdash; Accra, Ghana</div>
         <div class="tl-desc"><ul>
-          <li>Launched a modernised web platform for Business Ghana, increasing engagement by 15% and reducing bounce rates by 10%</li>
+          <li>Launched a modernized web platform for Business Ghana, increasing engagement by 15% and reducing bounce rates by 10%</li>
           <li>Implemented Redis caching achieving a sub-2-second Largest Contentful Paint (LCP)</li>
         </ul></div>
       </div>
@@ -450,7 +506,7 @@
       <div class="project-card">
         <div class="project-num">006</div>
         <div class="project-title">Talents Empowerment Foundation</div>
-        <p class="project-desc">Non-profit organisation founded to unlock human potential across Africa through technology education, mentorship programs, and skills development initiatives for emerging talent.</p>
+        <p class="project-desc">Non-profit organization founded to unlock human potential across Africa through technology education, mentorship programs, and skills development initiatives for emerging talent.</p>
         <div class="project-tags"><span class="tag">Social Impact</span><span class="tag">EdTech</span><span class="tag">Africa</span></div>
         <div class="project-links"></div>
       </div>
